@@ -1,0 +1,1608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <title>Ludhiana - Smart City</title>
+    <style>
+#navbar {
+    border-bottom: 1px solid #9e9e9c;
+	background-size: contain;
+		    background:linear-gradient(to right, #698eb6 0%, #e0dee2 100%, #e7eeef 100%) repeat scroll 0 0;
+}
+div {
+    display: block;
+}
+.nopad{padding:0px;
+    margin:0px;}
+    .font_access {
+        color: black;
+        text-align: center;
+        display: inline-block;
+        width: max-content;
+        float: left;
+        height: 30px;
+    }
+    .l {
+        float: left;
+    }
+    
+    .sr a,.font_access span,.tooltip{color:rgb(13, 13, 13);}    
+    #up,
+#down {
+padding: 0px 0px;
+    border: none;
+    font-size: 20px !important;
+    height: 30px;
+    width: 30px;
+}
+background {#f1f1f1;
+    border-radius: 30px;
+    border: 1px solid #5d6fe0;
+
+}
+
+.fa {
+    padding: 5px;
+    color: white ;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%
+}
+
+.fa-2x {
+    font-size: 2em
+}
+
+.fa-3x {
+    font-size: 3em
+}
+.text-left {
+    text-align: left !important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+div {
+    display: block;
+}
+@media (max-width: 767px)
+body {
+    font-size: 14px;
+}
+body {
+	font-family: 'aller_lightregular';  
+	font-size: 16px;
+	color: #1c1a1a;
+	background-color: #698eb6;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+    z-index: 1; }
+    .owl-carousel .owl-stage {
+      position: relative;
+      -ms-touch-action: pan-Y;
+      touch-action: manipulation;
+      -moz-backface-visibility: hidden;
+      /* fix firefox animation glitch */ }
+    .owl-carousel .owl-stage:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    .owl-carousel .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      /* fix for flashing background */
+      -webkit-transform: translate3d(0px, 0px, 0px); }
+    .owl-carousel .owl-wrapper,
+    .owl-carousel .owl-item {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0); }
+    .owl-carousel .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none; }
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 100%; }
+    .owl-carousel .owl-nav.disabled,
+    .owl-carousel .owl-dots.disabled {
+      display: none; }
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-dot {
+      cursor: pointer;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0 !important;
+      font: inherit; }
+    .owl-carousel.owl-loaded {
+      display: block; }
+    .owl-carousel.owl-loading {
+      opacity: 0;
+      display: block; }
+    .owl-carousel.owl-hidden {
+      opacity: 0; }
+    .owl-carousel.owl-refresh .owl-item {
+      visibility: hidden; }
+    .owl-carousel.owl-drag .owl-item {
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .owl-carousel.owl-grab {
+      cursor: move;
+      cursor: grab; }
+    .owl-carousel.owl-rtl {
+      direction: rtl; }
+    .owl-carousel.owl-rtl .owl-item {
+      float: right; }
+  
+  /* No Js */
+  .no-js .owl-carousel {
+    display: block; }
+  
+  /*
+   *  Owl Carousel - Animate Plugin
+   */
+  .owl-carousel .animated {
+    animation-duration: 1000ms;
+    animation-fill-mode: both; }
+  
+  .owl-carousel .owl-animated-in {
+    z-index: 0; }
+  
+  .owl-carousel .owl-animated-out {
+    z-index: 1; }
+  
+  .owl-carousel .fadeOut {
+    animation-name: fadeOut; }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  
+  /*
+   * 	Owl Carousel - Auto Height Plugin
+   */
+  .owl-height {
+    transition: height 500ms ease-in-out; }
+  
+  /*
+   * 	Owl Carousel - Lazy Load Plugin
+   */
+  .owl-carousel .owl-item {
+    /**
+              This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+              calculation of the height of the owl-item that breaks page layouts
+           */ }
+    .owl-carousel .owl-item .owl-lazy {
+      opacity: 0;
+      transition: opacity 400ms ease; }
+    .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+      max-height: 0; }
+    .owl-carousel .owl-item img.owl-lazy {
+      transform-style: preserve-3d; }
+  
+  /*
+   * 	Owl Carousel - Video Plugin
+   */
+  .owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000; }
+  
+  .owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url("owl.video.play.png") no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform 100ms ease; }
+  
+  .owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3); }
+  
+  .owl-carousel .owl-video-playing .owl-video-tn,
+  .owl-carousel .owl-video-playing .owl-video-play-icon {
+    display: none; }
+  
+  .owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity 400ms ease; }
+  
+  .owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
+
+    item1{margin: auto;display: table;text-align: -webkit-center;width: -webkit-fill-available;border-radius: 20px;box-shadow: 0 0 16px 0 rgb(215,215,215);}
+    .item1:hover{cursor: pointer;}  
+    #footer1_col4
+    {
+      border: 0px solid blue;
+      height: 150px;
+      color: white;
+    }
+    
+    
+    .disclaimer
+    {
+      text-align: left;
+    
+      color: rgb(234, 223, 223);
+    }
+    
+    .sicon{font-size:20px;cursor:pointer;display: inline-block;}
+    
+    .fa-search{padding: 0px !important;line-height: 1.5 !important;font-size: 20px !important;}
+    
+    #footer1_col2>ul
+    {
+       list-style: none;
+       font-size: 14px;
+       color: white;
+       padding:0px;
+    }
+    
+    #footer1_col3>ul
+    {
+       list-style: none;
+       font-size: 14px; padding:0px;
+    }
+    
+    #footer1_col4>ul
+    {
+       list-style: none;
+       font-size: 13px; padding:0px;
+    }
+    
+    .fullwidth{width:100% !Important;display:flex !important;}
+    
+    .form-control{width:100% !Important;}
+    
+    
+    .myModal18 .modal-body{padding:0px !Important;}
+    /*---------------------------------- Footer2----------------------------------*/
+    .footer2
+    {
+      text-align: center;
+      font-size: 13px;
+      border: 0px solid rgb(80, 75, 109);
+      background-image: linear-gradient(to right, #235fcd,#1c4ca3);
+      color: rgb(20, 1, 1);
+      padding: 5px;
+    }
+    
+    
+    /*---------------------------------- Footer3----------------------------------*/
+    
+    .footer3 img{width:28px;}
+    .footer3
+    {
+      text-align: center;
+      font-size: 15px;
+      border: 0px solid blue;
+      background-image: linear-gradient(to right, #1a4492,#1c4ca3);
+      color: white;
+      padding: 5px;
+    }
+    .disclaimer p{color:white;}
+    
+    /*--------------------------------- Footer4 Icons ---------------------------*/
+    
+    .footer4
+    {
+       background-image: linear-gradient(to right, #235fcd,#1c4ca3);
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .footer1_accord
+    {
+      display: none;
+    }
+    
+    .footer4_divider 
+    {
+        border-left: 1px solid #1e3a4a;
+        height: 35px;
+        position: absolute;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: none;
+        flex-grow: 1;
+    }
+    
+    .footer_image
+    {
+        vertical-align: middle;
+        width: 101px;
+        height: 36px;
+        border: 1px solid #888585;
+        padding: 4px;
+    }
+    
+    
+    
+    
+    
+    
+    .sr{float: left;padding: 5px;list-style: none;}
+    <!--[if IE]>.tc {
+        display: none !important;
+    }
+    
+    <![endif]-->@media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        .tc {
+            display: none !important;
+        }
+    }
+    .sitemap ul li{display: inherit !important;text-align: left;}
+    
+    .sitemap ul li:after{background: white !important;}
+    
+    .modal-header .close {
+        margin-top: 11px;
+    color: #120101;}
+    
+    .moretext {
+      display: none;
+    }
+    
+    .close {
+    color: #fff;}
+    
+    .fa-arrow-circle-o-down{color:black !important;    font-size: 20px !important;}
+    .fa-arrow-circle-o-up{color:black !important;    font-size: 20px !important;}
+    
+    .ellipsis {
+      color: #14281D;
+    }
+    
+    .more, .less {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0 5px;
+    }
+    
+    
+    
+    
+    
+    
+    .close {
+        line-height: 0;
+        opacity: 1;
+    }
+    
+        .fa-arrow-left{font-size: 23px !important;color:#11378c !important;}
+    .fa-home{font-size: 25px !important;
+        position: relative;
+        float: right !important;}
+    
+    
+    h2,strong{text-align: center;}
+    .ipage ul li{list-style: decimal;margin: 10px 0px;text-align: justify;margin-left: -25px;}
+    
+    
+    .tabs-left {
+        border-bottom: none;
+        border-right: 1px solid #ddd;
+    }
+    
+    .glyphicon-chevron-down {
+        float: right;
+    }
+    
+    .tabs-left>li {
+        float: none;
+        margin: 2px;
+    }
+    .nopad{padding:0px;
+    margin:0px;}
+    
+    @media (max-width: 1000px){
+    .nav-tabs>li>a {
+        padding: 6px 2px !important;
+    }
+    }
+    
+    
+    
+    
+    .larr{
+        
+         font: normal normal normal 14px/1 FontAwesome;
+        width: 38px;
+        height: 38px;
+        display: block;
+        position: relative;
+        margin-top: 50%;
+    }
+    
+     .rarr{
+        width: 38px;
+        height: 38px;float: right;
+        display: block;
+        position: relative;
+        margin-top: 50%;
+    }
+    #contact-us{
+        background-image: url(ld23.jpg);overflow: auto;
+        
+
+    }
+    
+    
+
+
+    #contact-us .feedback-us h2{
+        color: #fff;
+        padding-top: 10px;
+    }
+    .custom-modal.modal.fade.show {
+        top: 10%;
+    }
+    .custom-modal.modal{
+        left: 30%;
+        width: 40%;
+        text-align: left;
+        z-index: 9999;
+    }
+    .modal-backdrop{
+        z-index: 1200;
+    }
+    .custom-modal .modal-dialog{
+        width: 550px;
+    }
+    #contact-us a{
+        color: #fff;
+    }
+    .feedback-us .has-error .help-block{
+        color: #fff;
+    }
+    .about-us .entry-content{
+        height: 328px;
+    }
+    .news-body .news-title,.news-body .news-date{
+        font-weight: bold;
+    }
+    .news-body .news-title{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .news-body .publish-date{
+        font-size: 12px;
+    }
+    .news-body .news-details {
+        font-size: 13px;
+        color: #000;
+    }
+    .footer-area.home{
+        margin-top: 0px;
+    }
+    .vision-mision .entry-contents{
+        color:#000;
+    }
+    .left-quote,.right-quote{
+        font-size: 30px;
+        color: rgba(3, 130,193 , 1);                        
+        font-weight: 700;
+        padding: 0 5px;
+    }
+    .custom-table.table-filter tbody tr td{
+        text-align:left;
+        border-right: 1px solid #DFDFDF !important;
+    }
+    .board-director .table-filter p{
+        margin-bottom:0;
+    }
+    .board-director .table-filter tr td:nth-child(1){
+        text-align:center;
+        width:5%;
+    }
+    .board-director .table-filter tr td:nth-child(2){
+        width:50%;
+    }
+    .board-director .table-filter tr td:nth-child(3){
+        width:45%;
+    }
+    .internal-committee .committee-content{
+        color: #000;
+        font-size: 14px;
+    }
+    .internal-committee .table-filter p{
+        margin-bottom:0;
+    }
+    .internal-committee .table-filter tr td:nth-child(1){
+        text-align:center;
+        width:5%;
+    }
+    .internal-committee .table-filter tr td:nth-child(2){
+        width:70%;
+    }
+    .internal-committee .table-filter tr td:nth-child(3){
+        width:25%;
+    }
+    .org-policy .table-filter tr td:nth-child(1){
+        text-align:center;
+        width:5%;
+    }
+    .org-policy .table-filter tr td:nth-child(2){
+        width:95%;
+    }
+    .project-body .project-details{
+        font-size: 13px;
+    }
+    .project-body .project-title{
+        font-weight:bold
+    }
+    .custom-table.table-filter tbody tr:hover {
+        background-color:#DFDFDF !important;
+    }
+    .loader.PageLoader {
+        width: 100%;
+        height: 100%;
+        float: left;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+        z-index: 1000000;
+        background: rgba(255, 255, 255, 0.8); 
+    }
+    .logoLoader {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        top: 40%;
+        z-index: 1000000;
+        background: rgb(40, 38, 38) url(../images/custom_images/loader.svg) 50% 50% no-repeat;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        padding: 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        margin: 0 auto; 
+    }
+    .ajaxLoader {
+        width: 100%;
+        height: 100%;
+        float: left;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+        z-index: 1000000;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .ajaxLogoLoader {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        top: 40%;
+        z-index: 1000000;
+        background: white url(../images/custom_images/loader.svg) 50% 50% no-repeat;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        padding: 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        margin: 0 auto; 
+    }
+    .cscl-service .service-text1{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .gallery-responsive .video-js .vjs-big-play-button{
+        top: 60px;
+        left: 90px;
+    }
+    .content-body{
+        font-size: 16px;
+        text-align: left;
+    }
+    .content-body h5{
+        width: 100%;
+    }
+    
+    .custom-modal.modal .no-record{
+        text-align: center;
+        padding: 40px 10px;
+        color: red;
+    }
+    .contact-content .useful-links img{
+        width: 80px;
+    }
+    
+    table.custom-table.table.table-filter tbody tr:hover td {
+        background-color: #f9db07!important;
+    }
+    
+    .oddd:hover {
+        background-color: #ddf0f7!important;
+    }
+    #contact-us .useful-links a{
+        color: rgba(249,219,7,1);
+    }
+    .rti-content .annexure-details{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .common-content .common-content-details{
+        color: #000;
+        font-size: 14px;
+    }
+    .common-content .table-filter p{
+        margin-bottom:0;
+    }
+    .common-content .three-col.table-filter tr td:nth-child(1){
+        text-align:center;
+        width:5%;
+    }
+    .common-content .three-col.table-filter tr td:nth-child(2){
+        width:70%;
+    }
+    .common-content .three-col.table-filter tr td:nth-child(3){
+        width:25%;
+    }
+
+    .marquee {
+	color: #696969;
+	letter-spacing: 2px;
+	padding: 0px;
+	font-size: 17px;
+    list-style: none;
+}
+.marquee{width:1400px;float: left;}
+marquee {
+    width: 100%;
+}
+.marquee {
+    width: 100%;
+}
+
+    .other-site-logo{
+       /* position: absolute;*/
+        top: 1.6em;
+        z-index: 1111;
+        /*margin-left:15em;*/
+        text-align: right;
+        margin-top: 20px;
+    }
+    .other-site-logo img{
+        width:30%;
+    }
+    #navigation .fixed-top .other-site-logo{
+        top:.6em;
+        display:none;
+    }
+    .pdr-10{
+        padding-right: 10px;
+    }
+    .twitter-title{
+        background-color: rgba(3, 130,193 , 0.53);
+        color: #fff;
+        font-size: 90%;
+    }
+    .twitter-handle{
+        height: 220px;
+        overflow-y: scroll;
+        border: 1px #ccc solid;
+    }
+
+
+
+   .a,a:focus {
+    color: #000;
+}
+
+.ser:hover p {
+    color: white !important;
+}
+a,
+a:hover {
+    text-decoration: none
+}
+marquee p{position: static;font-size: 20px;display: inherit;}
+	.blink{float: inherit !important;}
+	.modal-body p{float: inherit !important;}
+	.modal-body li{list-style: none;}
+  
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+  
+     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        
+        <img src="pnb.png" alt="" sizes="" srcset="">
+
+          <a class="navbar-brand" href="#">Sign In</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Official Website Of Punjab</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Corona Related Information</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="l">
+
+                <button onclick="window.location.reload()" class="w" title="Normal View">A</button>
+                <button onclick="Black()" class="b" title="For Visually Disabled click here">A</button>
+                </div>
+            <div class="font_access"> 
+                <span>Font Size</span>  
+                <button id="up" title="Increase Font Size">+</button>
+                <span id="font-size" title="Font Size" style="display: inline-block;">14</span>
+                <button id="down" title="Decrease Font Size">-</button>
+                </div>
+                <i class="fa fa-wheelchair"> </i>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+         
+
+          
+        </div>
+     </nav>
+     
+
+      <button type="button" class="btn btn-secondary">Home</button>
+<button type="button" class="btn btn-secondary">About Us</button>
+<button type="button" class="btn btn-secondary" >Projects</button>
+<button type="button" class="btn btn-secondary">Tenders</button>
+<button type="button" class="btn btn-secondary">Recruitments</button>
+<button type="button" class="btn btn-secondary">Contact Info</button>
+<button type="button" class="btn btn-secondary">RTI</button>
+<button type="button" class="btn btn-secondary">Dashboard</button>
+
+<button type="button" class="btn btn-link" >Link</button>
+
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.s3waas.gov.in/s363923f49e5241343aa7acb6a06a751e7/uploads/2018/04/2018040282.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.s3waas.gov.in/s363923f49e5241343aa7acb6a06a751e7/uploads/2018/08/2018080894.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.s3waas.gov.in/s363923f49e5241343aa7acb6a06a751e7/uploads/2018/04/2018040282.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+ 
+              <div class="pgrs">
+                                <marquee class = "marquee" behavior="scroll" direction="left" scrollamount="7">   <p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="/" target="_blank">Click here <img class="mjsp-img" style="margin: 0px;padding: 10px;height:45px; " src="/" alt="Grivience"/>/ <strong><i class="fa fa-phone" style="color: black;"></i> contact</strong>  regarding any scheme / service of Government of Punjab</a></p>
+         
+         
+         <p> <i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="blank" href="/">For Government Department Schemes and beneficiary information, Please Visit “MAHITI KANAJA” Portal (https://punjab.gov.in)</a></p>
+         
+                                </marquee>
+              </div>
+               
+    <style>
+        .pgrs .marquee{letter-spacing: inherit;background: aliceblue;}
+            </style>  
+        </section>
+        
+	<section class="demo-section-box" >
+		<div class="section-container">
+
+			<div class="demo-box">
+
+				<div class="breaking-news-ticker" id="newsTicker10">
+			    	<div class="bn-label arrow_box_right">Latest News</div>
+			    	<div class="bn-news">
+					
+					   <marquee class = "marquee" behavior="scroll" direction="left">
+          <p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href="/"  target="_blank" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et blanditiis.</a></p><p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href=" / "  target="_blank" >ABCD</a></p><p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href=" / "  target="_blank" >ABCD</a></p><p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href="/" >Lorem ipsum dolor sit amet.</a></p><p><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href="/"  target="_blank" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor sapiente harum?</a></p></marquee>
+			    	</div>
+			    	<div class="bn-controls">
+					<button  data-toggle="modal" data-target="#newsandevents" role="link"><span class="ra">Read More </span></button>
+			    	</div>
+			    </div>
+			    <!-- *********************** -->
+			    <!-- DEMO10 HTML END HERE ** -->
+
+			</div>
+		</div>
+	</section>
+  <style>
+.pgrs .marquee{letter-spacing: inherit;background: aliceblue;}
+    </style>
+
+    <div class="modal fade" id="newsandevents" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Latest News</h4>
+            </div>
+                <div class="modal-body">
+    
+     <li><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href=" /"  target="_blank" >Lorem ipsum dolor sit amet.</a></li><li><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href=" / "  target="_blank" >Lorem ipsum dolor sit amet.</a></li><li><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href="/"  target="_blank" >Lorem, ipsum.</a></li><li><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href=" https://blrsmartcity.karnataka.gov.in/news/Vehicles Tender Notification for BenSCL office/kn " >Vehicles Tender Notification for BenSCL office</a></li><li><i class="fa fa-hand-o-right" aria-hidden="true"></i><a target="_blanck" href="/"  target="_blank" >Lorem, ipsum.</a></li>
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+  <div>
+    <div class="container" id="container_owl">
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+           
+    
+        
+    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2785px, 0px, 0px); transition: all 0.25s ease 0s; width: 5199px;"><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal7">
+        <div class="item1">
+          <img src="ceg11.png">
+          Technical Websites
+        </div>
+     
+       </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal9">
+        <div class="item1">
+          <img src="commission.png">
+           Commission
+        </div>
+       </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal10">  
+        <div class="item1">
+          <img src="law.png">
+          Law/Court
+        </div>
+       </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal11">
+        <div class="item1">
+          <img src="download.png">
+          Downloads
+        </div>
+       </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><a href="/" target="_blank">
+        <div class="item1">
+          <img src="tourist.png">
+          Tourist Websites
+        </div>
+       </a></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><a href="/" target="_blank">
+        <div class="item1">
+          <img src="HOLLIDAY.png">
+           Government Holidays
+        </div>
+       </a></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><a href="/" target="_blank">
+        <div class="item1">
+          <img src="govt.png" id="manual">
+          Govt Contact Manual
+        </div>
+       </a></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal1">
+        <div class="item1">
+          <img src="website.png">
+          Important Websites
+        </div> 
+       </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal2">
+         <div class="item1">
+           <img src="website.png">
+           e-Governance Websites
+         </div>
+        </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal3">
+         <div class="item1">
+          <img src="website.png">
+          e-Service Websites
+         </div>
+        </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal4">
+         <div class="item1">
+          <img src="stat.png">
+          Statistics Websites
+         </div>
+        </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div>
+          <a href="/" target="_blank">
+         <div class="item1">
+          <img src="app.png">
+          Government Apps
+         </div>
+         </a>
+        </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal6">
+        <div class="item1">
+          <img src="website.png">
+          Central Govt Websites
+        </div>
+       </div></div><div class="owl-item" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal7">
+        <div class="item1">
+          <img src="website.png">
+          Technical Websites
+        </div>
+       </div></div><div class="owl-item active" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal8">
+        <div class="item1">
+          <img src="/">
+          
+        </div>
+       </div></div><div class="owl-item active" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal9">
+        <div class="item1">
+          <img src="commission.png">
+           Commission
+        </div>
+       </div></div>
+     
+        <div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal3">
+         <div class="item1">
+          <img src="website.png">
+          e-Service Websites
+         </div>
+        </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal4">
+         <div class="item1">
+          <img src="stat.png">
+          Statistics Websites
+         </div>
+        </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div>
+          <a href="/" target="_blank">
+         <div class="item1">
+          <img src="app.png">
+          Government Apps
+         </div>
+         </a>
+        </div></div><div class="owl-item cloned" style="width: 175.667px; margin-right: 10px;"><div data-toggle="modal" data-target="#myModal6">
+        <div class="item1">
+          <img src="ceg11.png">
+          Central Govt Websites
+        </div>
+       </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+    </div>
+    </div>
+</div>
+<div>
+    <div id="contact-us" class="padding-top padding-bottom contactusBg">		
+        <div class="container text-center">
+            <div class="wow fadeInUp animated" data-wow-duration="700ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 300ms; animation-name: fadeInUp;">
+            </div>
+            <div class="section-title">
+                <h3 class="wow fadeInDown animated" data-wow-duration="700ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 300ms; animation-name: fadeInDown;">Contact Us</h3>
+                <hr class="title-border">
+                
+            </div>
+            <div class="contact-content text-left">
+                <div class="row">
+                    <div class="col-md-4 wow zoomIn animated" data-wow-duration="700ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 300ms; animation-name: zoomIn;">
+                        <h2>Registered Office</h2>
+                        <address>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                               Ludhiana Smart City Limited,<br>
+                                Muncipal Corporation
+                                
+                            </p>
+                         
+                            <p><i class="fa fa-phone"></i> Phone: 1234567789</p>
+                            <p><i class="fa fa-envelope"></i> Email: <a href="/">
+                            abcd@gmail.com</a></p>
+                        </address>
+                        <div><iframe src="https://www.google.com/maps/place/Ludhiana,+Punjab/@30.906302,75.825202,12z/data=!4m6!3m5!1s0x391a837462345a7d:0x681102348ec60610!8m2!3d30.900965!4d75.8572758!16zL20vMDJjN3Ri?hl=en&entry=ttu width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                    </div>
+                    <div class="col-md-3 wow zoomIn animated" data-wow-duration="700ms" data-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms; animation-name: zoomIn;">
+                        <h2>Follow Us On</h2>
+                        <div class="business-time">
+                            <p><a href="/" target="_blank" title="Ludhiana Smart City Official facebook Page"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></p>
+                            <p><a href="/" target="_blank" title="Ludhiana Smart City Official Twitter Page"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></p>							        <p><a href="https://www.instagram.com/chandigarh.smartcity/" target="_blank" title="Chandigarh Smart City Official Instagram Page"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></p>		
+                        </div>	
+                        <br>
+                        <h2>Important Links</h2>
+                        <div class="useful-links">
+                            <p><a href="/" target="_blank" title="Operation and Maintenance of Battery Operated Cart">Battery Operated Cart</a></p>
+                            <p><a href="/" target="_blank" title="Legacy Waste Mining">Legacy Waste Mining</a></p>
+                            <p><a href="/" target="_blank" title="e-Governance Services">e-Governance Services</a></p>
+                            <p><a href="/" target="_blank" title="Solid Waste Processing Tender - MCC">Solid Waste Processing Tender - MCC</a></p>
+                        </div>
+                    </div>
+                    <div class="feedback-us col-md-5 wow zoomIn animated" id="promo-two" data-wow-duration="700ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 500ms; animation-name: zoomIn; background-position: 50% 415px;">
+                    
+    
+    
+    
+        
+    
+        <div class="portlet-boundary portlet-boundary_com_cscl_feedback_FeedbackPortlet_  portlet-static portlet-static-end portlet-barebone  " id="p_p_id_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_">
+            <span id="p_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback"></span>
+    
+    
+
+    
+    
+    
+    
+    <h2>Feedback</h2>
+    
+    <div class="alert alert-success fade show" role="alert" id="feedbackSuccess">
+        <span class="alert-indicator">
+            <svg class="lexicon-icon lexicon-icon-check-circle-full" focusable="false" role="presentation" viewBox="0 0 512 512">
+                <path class="lexicon-icon-outline" d="M484.1,139.7c-54.4,62.6-167,190-203.8,233c-5.9,6.8-14.6,11.2-24.3,11.2c-8.8,0-16.8-3.6-22.6-9.4c-45.3-45.3-50.7-50.7-96-96c-5.8-5.8-9.4-13.8-9.4-22.6c0-17.7,14.3-32,32-32c8.8,0,16.8,3.6,22.6,9.4c35.6,35.6,46.6,46.6,71.6,71.6c47-54.8,150.9-171.7,192.5-219.7C399.8,32.9,331.8,0,256,0C114.6,0,0,114.6,0,256s114.6,256,256,256s256-114.6,256-256C512,214.1,501.9,174.6,484.1,139.7z"></path>
+            </svg>
+        </span>
+        <strong class="lead">Success:</strong>Thanks for your valuable feedback.
+    </div>
+    
+    
+    
+    
+    
+    <form action="" class="form contact-form " data-fm-namespace="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm" method="post" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm">
+        
+            <fieldset class="input-container">
+        
+
+        
+    
+            
+    
+            
+                
+                    <input class="field form-control" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_formDate" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_formDate" type="hidden" value="1689545633798">
+                
+    
+    
+        
+    
+        <div class="row">
+            <div class="col-md-12 name-field">
+                
+
+    
+    
+    
+        <div class="form-group input-String-wrapper">
+    
+    
+                  
+                                <input class="field form-control lfr-input-text" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name" placeholder="Name" style="" type="text" value="" maxlength="75" aria-describedby="">
+                            
+                        
+                    
+                    
+    
+                
+                    
+    
+                    <script type="text/javascript">
+    // <![CDATA[
+    AUI().use('aui-char-counter', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+                        new A.CharCounter(
+                            {
+                                input: '#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name',
+                                maxLength: 75
+                            }
+                        );
+                    })();});
+    // ]]>
+    </script>
+
+        </div>
+    
+    
+    
+            </div>
+            <div class="col-md-6 email-field">
+                 
+    
+                        
+                            
+                                <input class="field form-control lfr-input-text" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email" placeholder="Email" style="" type="text" value="" maxlength="75" aria-describedby="">
+                            
+                        
+                    
+                    
+    
+                
+                    
+    
+                    <script type="text/javascript">
+    // <![CDATA[
+    AUI().use('aui-char-counter', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+                        new A.CharCounter(
+                            {
+                                input: '#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email',
+                                maxLength: 75
+                            }
+                        );
+                    })();});
+    // ]]>
+    </script>
+
+    
+    
+        </div>
+    
+    
+    
+            </div>
+            <div class="col-md-6">
+        
+    
+    
+    
+    
+        <div class="form-group input-String-wrapper">
+               
+                            
+                                <input class="field form-control lfr-input-text" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile" placeholder="Mobile" style="" type="text" value="" maxlength="10" aria-describedby="">
+                            
+                        
+                    
+                    
+    
+                
+                    
+    
+                    <script type="text/javascript">
+    // <![CDATA[
+    AUI().use('aui-char-counter', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+                        new A.CharCounter(
+                            {
+                                input: '#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile',
+                                maxLength: 10
+                            }
+                        );
+                    })();});
+    // ]]>
+    </script>
+                
+            
+        
+    
+        
+        
+    
+    
+    
+    
+    
+    
+        </div>
+    
+    
+    
+            </div>
+            <div class="col-md-12">
+                
+ 
+    
+    
+    
+        <div class="form-group input-String-wrapper">
+    
+         
+                        
+                            
+                                <textarea class="field form-control lfr-textarea" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments" name="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments" onkeydown=" Liferay.Util.disableEsc();" placeholder="Give your valuable feedback here ..." style="height: 105px;" wrap="soft" maxlength="500" aria-describedby=""></textarea>
+                            
+                 
+    
+                    <script type="text/javascript">
+    // <![CDATA[
+    AUI().use('aui-char-counter', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+                        new A.CharCounter(
+                            {
+                                input: '#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments',
+                                maxLength: 500
+                            }
+                        );
+                    })();});
+    // ]]>
+    </script>
+                
+            
+ 
+    
+    
+        </div>
+    
+    
+    
+            </div>
+        </div>
+        <div class="form-group">
+ 
+    
+    
+    
+        
+            <button class="btn  btn-primary btn-default" id="_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_ddhq" type="submit">
+        
+    
+    
+    
+    
+    
+        <span class="lfr-btn-label">Submit</span>
+    
+    
+    
+    
+    
+        
+            </button>
+        
+    
+    
+    
+    
+    
+    
+    
+        </div>
+ 
+        
+    
+        
+            </fieldset>
+        
+    </form>
+    
+    
+    
+    <script type="text/javascript">
+    // <![CDATA[
+    AUI().use('liferay-form', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+        Liferay.Form.register(
+            {
+                id: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm'
+    
+                
+                    , fieldRules: [
+    
+                        
+    
+                                
+    
+                                {
+                                    body: '',
+                                    custom: false,
+                                    errorMessage: '',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments',
+                                    validatorName: 'required'
+                                }
+    
+                        
+    
+                                ,
+    
+                                {
+                                    body: '',
+                                    custom: false,
+                                    errorMessage: '',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name',
+                                    validatorName: 'required'
+                                }
+    
+                        
+    
+                                ,
+    
+                                {
+                                    body: [10,10],
+                                    custom: false,
+                                    errorMessage: '\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0061\u0020\u0076\u0061\u006c\u0069\u0064\u0020\u006d\u006f\u0062\u0069\u006c\u0065\u0020\u006e\u0075\u006d\u0062\u0065\u0072',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile',
+                                    validatorName: 'rangeLength'
+                                }
+    
+                        
+    
+                                ,
+    
+                                {
+                                    body: '',
+                                    custom: false,
+                                    errorMessage: '',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile',
+                                    validatorName: 'digits'
+                                }
+    
+                        
+    
+                                ,
+    
+                                {
+                                    body: '',
+                                    custom: false,
+                                    errorMessage: '',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email',
+                                    validatorName: 'required'
+                                }
+    
+                        
+    
+                                ,
+    
+                                {
+                                    body: '',
+                                    custom: false,
+                                    errorMessage: '',
+                                    fieldName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email',
+                                    validatorName: 'email'
+                                }
+    
+                        
+    
+                    ]
+                
+    
+                
+                    , onSubmit: function(event) {
+                        event.preventDefault(); _com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_saveFeedback();
+                    }
+                
+    
+                , validateOnBlur: true
+            }
+        );
+    
+        var onDestroyPortlet = function(event) {
+            if (event.portletId === 'com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback') {
+                delete Liferay.Form._INSTANCES['_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm'];
+            }
+        };
+    
+        Liferay.on('destroyPortlet', onDestroyPortlet);
+    
+        
+            A.all('#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm .input-container').removeAttribute('disabled');
+        
+    
+        Liferay.fire(
+            '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_formReady',
+            {
+                formName: '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm'
+            }
+        );
+    })();});
+    // ]]>
+    </script>
+    
+    <style>
+    #feedbackSuccess{
+        display: none;
+    }
+    </style>
+    <script type="text/javascript">
+    // <![CDATA[
+    
+        function _com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_saveFeedback() {
+            var form = document.getElementById('_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_fm');
+            var url="https://www.chandigarhsmartcity.in/web/guest/home?p_p_id=com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=%2Ffeedback%2Fadd_feedback&p_p_cacheability=cacheLevelPage";
+             var name=$("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name").val().trim();
+            var email=$("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email").val().trim();
+            var mobile=$("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile").val().trim();
+            var comments=$("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments").val().trim();
+            
+            if (form) {
+                jQuery.ajax({
+                 type: "POST",
+                 url:url,
+                 data : {'_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name':name,
+                         '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email':email,
+                         '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile':mobile,
+                         '_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments':comments,
+                         },
+                 success: function(msg){
+                     $("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_name").val('');
+                    $("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_email").val('');
+                    $("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_mobile").val('');
+                    $("#_com_cscl_feedback_FeedbackPortlet_INSTANCE_feedback_comments").val('');
+                    $("#feedbackSuccess").css("display","block");
+                 }
+            }); 
+                
+            }
+        }
+    
+    // ]]>
+    </script>
+    
+        
+        
+                        
+                    
+                
+            
+        
+        
+    
+    
+        </div>
+    
+                </div>
+            
+        </div>
+    </section>
+        
+    
+            
+            
+    
+    
+    
+    
+    
+    
+    
+        </div>
+    
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+      <div class="container" id="footer2_container">  
+       CONTENT OWNED AND MAINTAINED BY : Ludhiana -Smart City </div>
+     </div>
+
+
+     <div class="footer3">
+      <div class="container" id="footer3_container">  
+       Designed, Developed and Hosted by: <a href="#" target="_blank"><img src="pnb.png"  class="footer3_img" /> </a> Center for e-Governance - Web Portal, Government of PUNJAB © 2023, All Rights Reserved.
+     
+         <p style="color: white;font-size: 12px;">Best viewed in Chrome , Microsoft Edge v Firefox -v-83.0 Browsers.
+           Resolution : 1280x800 to 1920x1080</p> 
+      </div> 
+     </div>
+
+<div class="portlet-content">
+
+<div class="autofit-float autofit-row portlet-header">
+    <div class="autofit-col autofit-col-expand">
+    </div>
+
+    <div class="autofit-col autofit-col-end">
+        <div class="autofit-section">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
